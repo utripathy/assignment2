@@ -37,7 +37,7 @@ document.getElementById('box').onclick = function () {
   var timeTaken = (endTime - startTime) / 1000;
 
   // Display the reaction time in seconds or minutes.
-  alert(timeTaken + 'seconds');
+  alert(timeTaken + ' seconds');
 
   document.getElementById('box').style.display = 'block';
 
