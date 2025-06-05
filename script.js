@@ -14,16 +14,12 @@ function getRandomColor() {
 function movableBox() {
   var left;
   var top;
-  var wh;
 
   left = Math.random() * 300;
   top = Math.random() * 300;
-  wh = Math.random() * 400 + 100;
 
   document.getElementById('box').style.left = left + 'px';
   document.getElementById('box').style.top = top + 'px';
-  document.getElementById('box').style.width = wh + 'px';
-  document.getElementById('box').style.height = wh + 'px';
   document.getElementById('box').style.display = 'block';
 
   // Change the box's color after the result is shown.
@@ -47,6 +43,3 @@ document.getElementById('box').onclick = function () {
 
   movableBox();
 };
-
-// Movable box each second
-setInterval(movableBox, 1000);
